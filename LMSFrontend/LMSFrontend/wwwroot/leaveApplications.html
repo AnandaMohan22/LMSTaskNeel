@@ -1,0 +1,127 @@
+﻿<body>
+    <div class="container mt-4">
+        <h2>Leave Request Management</h2>
+
+        <form id="leaveTypeForm" class="mb-4">
+            <div class="mb-3">
+                <label for="selectLeavePeriod" class="form-label">Select Leave Period</label>
+                <select class="form-control" id="selectLeavePeriod" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectUserDropdown" class="form-label">Select User</label>
+                <select class="form-control" id="selectUserDropdown" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectLeaveTypeDropdown" class="form-label">Select Leave Type</label>
+                <select class="form-control" id="selectLeaveTypeDropdown" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="requestDays" class="form-label">Allocated Days</label>
+                <input type="number" min="0" max="99" class="form-control" id="requestDays" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+</body>
+<script>
+    var _userArray = [];
+    var _leaveTypeArray = [];
+    var _leavePeriodArray = [];
+    $(document).ready(function () {
+        loadUsers();
+
+        $("#leaveTypeForm").submit(function (event) {
+            event.preventDefault();
+            let leaveType = {
+                userId: parseInt($("#selectUserDropdown").val(), 10),
+                leaveTypeId: parseInt($("#selectLeaveTypeDropdown").val(), 10),
+                leavePeriodId: parseInt($("#selectLeavePeriod").val(), 10),
+                requestedDays: parseInt($("#requestDays").val(), 10),
+                Status:""
+            };
+            $.ajax({
+                url: "https://localhost:7192/api/User/UserLeaveApplication",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(leaveType),
+                success: function (response) {
+                    debugger
+                    if (response == 'Insufficient leave balance') {
+                        alert("Insufficient leave balance!");
+                    } else {
+                        alert("Leave is Approved")
+                    }
+                   
+                   
+                }
+            });
+        });
+    });
+    function loadUsers() {
+        $.ajax({
+            url: "https://localhost:7192/api/User/GetUser",
+            type: "GET",
+            success: function (response) {
+                let dropdown = $("#selectUserDropdown");
+                dropdown.empty();
+                dropdown.append('<option value="">Select User</option>');
+
+                response.forEach(user => {
+                    dropdown.append(`<option value="${user.id}">${user.fullName}</option>`);
+                });
+                _userArray.push(...response);
+                loadLeaveType();
+            },
+            error: function () {
+                alert("Error loading leave types.");
+            }
+        });
+    }
+    function loadLeaveType() {
+        $.ajax({
+            url: "https://localhost:7192/api/LeavePeriod/GetLeaveType",
+            type: "GET",
+            success: function (response) {
+                let dropdown = $("#selectLeaveTypeDropdown");
+                dropdown.empty();
+                dropdown.append('<option value="">Select Leave Type</option>');
+
+                response.forEach(user => {
+                    dropdown.append(`<option value="${user.id}">${user.name}</option>`);
+                });
+                _leaveTypeArray.push(...response)
+                loadLeavePeriod();
+            },
+            error: function () {
+                alert("Error loading leave types.");
+            }
+        });
+    }
+    function loadLeavePeriod() {
+        $.ajax({
+            url: "https://localhost:7192/api/LeavePeriod/GetLeavePeriod",
+            type: "GET",
+            success: function (response) {
+                let dropdown = $("#selectLeavePeriod");
+                dropdown.empty();
+                dropdown.append('<option value="">Select Leave Period</option>');
+
+                response.forEach(user => {
+                    dropdown.append(`<option value="${user.id}">${user.name}</option>`);
+                });
+                _leavePeriodArray.push(...response)
+                loadTable();
+            },
+            error: function () {
+                alert("Error loading leave types.");
+            }
+        });
+    }
+</script>

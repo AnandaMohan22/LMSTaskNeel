@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Mohan files\\Neel-Tech\\LMSApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\irepository\\irepouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\irepository\\irepouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\models\\leavetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\models\\leavetypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Migrations\\20250227195646_leavetypechanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LMSApi\\Migrations\\20250227195646_leavetypechanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\controllers\\leaveperiodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\controllers\\leaveperiodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|e:\\mohan files\\neel-tech\\lmsapi\\lmsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0898B605-EF55-4A98-9975-616B5674E461}|LMSApi\\LMSApi.csproj|solutionrelative:lmsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IRepoUser.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\IRepository\\IRepoUser.cs",
+              "RelativeDocumentMoniker": "LMSApi\\IRepository\\IRepoUser.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\IRepository\\IRepoUser.cs",
+              "RelativeToolTip": "LMSApi\\IRepository\\IRepoUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T20:12:31.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250227195646_leavetypechanges.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Migrations\\20250227195646_leavetypechanges.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Migrations\\20250227195646_leavetypechanges.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Migrations\\20250227195646_leavetypechanges.cs",
+              "RelativeToolTip": "LMSApi\\Migrations\\20250227195646_leavetypechanges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:56:47.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeaveTypes.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Models\\LeaveTypes.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Models\\LeaveTypes.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Models\\LeaveTypes.cs",
+              "RelativeToolTip": "LMSApi\\Models\\LeaveTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:55:51.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Program.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Program.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Program.cs",
+              "RelativeToolTip": "LMSApi\\Program.cs",
+              "ViewState": "AgIAABEAAACAMzMzMzMbwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:42:04.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\appsettings.json",
+              "RelativeDocumentMoniker": "LMSApi\\appsettings.json",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\appsettings.json",
+              "RelativeToolTip": "LMSApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-27T19:42:03.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Models\\AppDbContext.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "LMSApi\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:41:50.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "LMSApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T10:41:52.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeavePeriodController.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Controllers\\LeavePeriodController.cs",
+              "RelativeDocumentMoniker": "LMSApi\\Controllers\\LeavePeriodController.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSApi\\LMSApi\\Controllers\\LeavePeriodController.cs",
+              "RelativeToolTip": "LMSApi\\Controllers\\LeavePeriodController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T04:32:02.503Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

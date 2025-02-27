@@ -1,0 +1,81 @@
+﻿<html>
+<body>
+    <div class="container mt-4">
+        <h2>Leave Period Management</h2>
+        
+        <form id="leavePeriodForm" class="mb-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Leave Period Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="startDate" class="form-label">Start Date</label>
+                <input type="date" class="form-control" id="startDate" required>
+            </div>
+            <div class="mb-3">
+                <label for="endDate" class="form-label">End Date</label>
+                <input type="date" class="form-control" id="endDate" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Leave Period</button>
+        </form>
+        
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            <tbody id="leavePeriodTableBody">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            loadLeavePeriods();
+            $("#leavePeriodForm").submit(function (event) {
+                event.preventDefault();
+                let leavePeriod = {
+                    name: $("#name").val(),
+                    startDate: $("#startDate").val(),
+                    endDate: $("#endDate").val()
+                };
+
+                $.ajax({
+                    url: "https://localhost:7192/api/LeavePeriod/CreateLeavePeriod",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(leavePeriod),
+                    success: function () {
+                        alert("Leave Period Created Successfully!");
+                        $("#leavePeriodForm")[0].reset();
+                        loadLeavePeriods();
+                    }
+                });
+            });
+        });
+        function loadLeavePeriods() {
+            $.ajax({
+                url: "https://localhost:7192/api/LeavePeriod/GetLeavePeriod",
+                type: "GET",
+                success: function (response) {
+                    let tableBody = "";
+                    response.forEach((period, index) => {
+                        tableBody += `<tr>
+                        <td>${index +1}</td>
+                        <td>${period.name}</td>
+                        <td>${period.startDate}</td>
+                        <td>${period.endDate}</td>
+                    </tr>`;
+                    });
+                    $("#leavePeriodTableBody").html(tableBody);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

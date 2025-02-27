@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Leave Management System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#" id="leavePeriodLink">Leave Period</a>
+                <a class="nav-item nav-link" href="#" id="userLink">User</a>
+                <a class="nav-item nav-link" id="leaveTypeLink" href="#">Leave Type</a>
+                <a class="nav-item nav-link" id="leaveRequest" href="#">Leave Request</a>
+               
+            </div>
+        </div>
+    </nav>
+    
+    <div id="content" class="ml-2 mr-2"></div>
+
+    <script>
+        $(document).ready(function () {
+           
+            function loadLeavePeriodPage() {
+                $('#content').load('leave-period.html');
+            }
+            loadLeavePeriodPage();
+
+            $('#leavePeriodLink').click(function (e) {
+                e.preventDefault();
+                loadLeavePeriodPage();
+            });
+            $('#leaveTypeLink').click(function (e) {
+                e.preventDefault();
+                loadLeaveTypePage();
+            });
+            $('#leaveRequest').click(function (e) {
+                e.preventDefault();
+                loadLeaveRequestPage();
+            });
+            $('#userLink').click(function (e) {
+                e.preventDefault();
+                loadUserPage();
+            });
+            function loadLeaveTypePage() {
+                $('#content').load('leaveType.html');
+            }
+            function loadLeaveRequestPage() {
+                $('#content').load('leaveApplications.html');
+            }
+            function loadUserPage() {
+                $('#content').load('user.html');
+            }
+        });
+    </script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|e:\\mohan files\\neel-tech\\lmsfrontend\\lmsfrontend\\wwwroot\\user.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|solutionrelative:lmsfrontend\\wwwroot\\user.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|e:\\mohan files\\neel-tech\\lmsfrontend\\lmsfrontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|solutionrelative:lmsfrontend\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|e:\\mohan files\\neel-tech\\lmsfrontend\\lmsfrontend\\wwwroot\\leave-period.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|solutionrelative:lmsfrontend\\wwwroot\\leave-period.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|e:\\mohan files\\neel-tech\\lmsfrontend\\lmsfrontend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|solutionrelative:lmsfrontend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|e:\\mohan files\\neel-tech\\lmsfrontend\\lmsfrontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E8D1EC-56C4-4445-A210-E1C459F7A688}|LMSFrontend\\LMSFrontend.csproj|solutionrelative:lmsfrontend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "user.html",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\user.html",
+              "RelativeDocumentMoniker": "LMSFrontend\\wwwroot\\user.html",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\user.html",
+              "RelativeToolTip": "LMSFrontend\\wwwroot\\user.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-27T20:09:54.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "leave-period.html",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leave-period.html",
+              "RelativeDocumentMoniker": "LMSFrontend\\wwwroot\\leave-period.html",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leave-period.html",
+              "RelativeToolTip": "LMSFrontend\\wwwroot\\leave-period.html",
+              "ViewState": "AgIAADUAAACAMzMzMzMbwE4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-27T08:07:12.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\appsettings.json",
+              "RelativeDocumentMoniker": "LMSFrontend\\appsettings.json",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\appsettings.json",
+              "RelativeToolTip": "LMSFrontend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-27T07:12:27.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "LMSFrontend\\wwwroot\\index.html",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\index.html",
+              "RelativeToolTip": "LMSFrontend\\wwwroot\\index.html",
+              "ViewState": "AgIAAA8AAACAMzMzMzMrwDEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-27T07:13:00.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\Program.cs",
+              "RelativeDocumentMoniker": "LMSFrontend\\Program.cs",
+              "ToolTip": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\Program.cs",
+              "RelativeToolTip": "LMSFrontend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T07:10:51.384Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

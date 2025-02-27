@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "U6Jv6HuxwZshA1zrMnqY5tOH/LNc/u4pulaYtUdxO1M=",
+  "Source": "LMSFrontend",
+  "BasePath": "_content/LMSFrontend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LMSFrontend\\wwwroot",
+      "Source": "LMSFrontend",
+      "ContentRoot": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\",
+      "BasePath": "_content/LMSFrontend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\index.html",
+      "SourceId": "LMSFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\",
+      "BasePath": "_content/LMSFrontend",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1fa61tevy4",
+      "Integrity": "PU+hC/x4XgoCtxj3xP2m8wUXQEakrSo69QVghWYxDQ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveApplications.html",
+      "SourceId": "LMSFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\",
+      "BasePath": "_content/LMSFrontend",
+      "RelativePath": "leaveApplications#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5pc842pzrs",
+      "Integrity": "SQ4YLwUZmBpHc225RmnyRASXUGsBHh7r5Xb0wup+5bk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\leaveApplications.html"
+    },
+    {
+      "Identity": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leave-period.html",
+      "SourceId": "LMSFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\",
+      "BasePath": "_content/LMSFrontend",
+      "RelativePath": "leave-period#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5o9m1h8f1u",
+      "Integrity": "dZ9FcSmoCIQjmokUS5CJBtzlXolk/38YQ6q2/SfTZmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\leave-period.html"
+    },
+    {
+      "Identity": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveType.html",
+      "SourceId": "LMSFrontend",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\",
+      "BasePath": "_content/LMSFrontend",
+      "RelativePath": "leaveType#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bgfzre3xgp",
+      "Integrity": "BWRWVTFWIYPPx6Yc+kuGaKfTyV7KlsmhVM4aiXpGROI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\leaveType.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.1fa61tevy4.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PU+hC/x4XgoCtxj3xP2m8wUXQEakrSo69QVghWYxDQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1fa61tevy4"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PU+hC/x4XgoCtxj3xP2m8wUXQEakrSo69QVghWYxDQ4="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PU+hC/x4XgoCtxj3xP2m8wUXQEakrSo69QVghWYxDQ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:46:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PU+hC/x4XgoCtxj3xP2m8wUXQEakrSo69QVghWYxDQ4="
+        }
+      ]
+    },
+    {
+      "Route": "leaveApplications.5pc842pzrs.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveApplications.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SQ4YLwUZmBpHc225RmnyRASXUGsBHh7r5Xb0wup+5bk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5pc842pzrs"
+        },
+        {
+          "Name": "label",
+          "Value": "leaveApplications.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQ4YLwUZmBpHc225RmnyRASXUGsBHh7r5Xb0wup+5bk="
+        }
+      ]
+    },
+    {
+      "Route": "leaveApplications.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveApplications.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SQ4YLwUZmBpHc225RmnyRASXUGsBHh7r5Xb0wup+5bk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SQ4YLwUZmBpHc225RmnyRASXUGsBHh7r5Xb0wup+5bk="
+        }
+      ]
+    },
+    {
+      "Route": "leave-period.5o9m1h8f1u.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leave-period.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3005"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZ9FcSmoCIQjmokUS5CJBtzlXolk/38YQ6q2/SfTZmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5o9m1h8f1u"
+        },
+        {
+          "Name": "label",
+          "Value": "leave-period.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZ9FcSmoCIQjmokUS5CJBtzlXolk/38YQ6q2/SfTZmk="
+        }
+      ]
+    },
+    {
+      "Route": "leave-period.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leave-period.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3005"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZ9FcSmoCIQjmokUS5CJBtzlXolk/38YQ6q2/SfTZmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dZ9FcSmoCIQjmokUS5CJBtzlXolk/38YQ6q2/SfTZmk="
+        }
+      ]
+    },
+    {
+      "Route": "leaveType.bgfzre3xgp.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveType.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWRWVTFWIYPPx6Yc+kuGaKfTyV7KlsmhVM4aiXpGROI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bgfzre3xgp"
+        },
+        {
+          "Name": "label",
+          "Value": "leaveType.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWRWVTFWIYPPx6Yc+kuGaKfTyV7KlsmhVM4aiXpGROI="
+        }
+      ]
+    },
+    {
+      "Route": "leaveType.html",
+      "AssetFile": "E:\\Mohan files\\Neel-Tech\\LMSFrontend\\LMSFrontend\\wwwroot\\leaveType.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7021"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BWRWVTFWIYPPx6Yc+kuGaKfTyV7KlsmhVM4aiXpGROI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 19:45:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BWRWVTFWIYPPx6Yc+kuGaKfTyV7KlsmhVM4aiXpGROI="
+        }
+      ]
+    }
+  ]
+}

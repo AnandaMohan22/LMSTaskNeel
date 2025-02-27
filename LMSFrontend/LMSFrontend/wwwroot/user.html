@@ -1,0 +1,71 @@
+﻿
+<body>
+    <div class="container mt-4">
+        <h2>User Management</h2>
+
+        <form id="userForm" class="mb-4">
+            <div class="mb-3">
+                <label for="userName" class="form-label">User Name</label>
+                <input type="text" class="form-control" id="userName" required>
+            </div>
+            <div class="mb-3">
+                <label for="userEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="userEmail" required>
+            </div>
+            <button type="submit" class="btn btn-primary aligin-center">Save</button>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+            </tbody>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function () {
+        loadUsers();
+        $("#userForm").submit(function (event) {
+            event.preventDefault();
+            let leavePeriod = {
+                fullName: $("#userName").val(),
+                email: $("#userEmail").val()
+            };
+
+            $.ajax({
+                url: "https://localhost:7192/api/User/CreateUser",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(leavePeriod),
+                success: function () {
+                    alert("User Created Successfully!");
+                    $("#userForm")[0].reset();
+                    loadUsers();
+                }
+            });
+        });
+    });
+        function loadUsers() {
+        $.ajax({
+            url: "https://localhost:7192/api/User/GetUser",
+            type: "GET",
+            success: function (response) {
+                let tableBody = "";
+                response.forEach((user, index) => {
+                    tableBody += `<tr>
+                    <td>${index + 1}</td>
+                    <td>${user.fullName}</td>
+                    <td>${user.email}</td>
+                </tr>`;
+                });
+                $("#userTableBody").html(tableBody);
+            }
+        });
+    }
+    </script>
+</body>

@@ -1,0 +1,170 @@
+﻿<body>
+    <div class="container mt-4">
+        <h2>Leave Type Management</h2>
+       
+        <form id="leaveTypeForm" class="mb-4">
+            <div class="mb-3">
+                <label for="selectLeavePeriod" class="form-label">Select Leave Period</label>
+                <select class="form-control" id="selectLeavePeriod" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectUserDropdown" class="form-label">Select User</label>
+                <select class="form-control" id="selectUserDropdown" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="selectLeaveTypeDropdown" class="form-label">Select Leave Type</label>
+                <select class="form-control" id="selectLeaveTypeDropdown" required>
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="leaveAllocatedDays" class="form-label">Allocated Days</label>
+                <input type="number" min="0" max="99" class="form-control" id="leaveAllocatedDays" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Leave Period</th>
+                    <th>User Name</th>
+                    <th>Leave Type</th>
+                    <th>Allocated Leave</th>
+                    <th>Leave Taken</th>
+                    <th>Remaining Leaves</th>
+
+                </tr>
+            </thead>
+            <tbody id="leaveTypeTableBody">
+               
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        var _userArray = [];
+        var _leaveTypeArray = [];
+        var _leavePeriodArray = [];
+        $(document).ready(function() {
+            loadUsers();
+            
+            $("#leaveTypeForm").submit(function(event) {
+                event.preventDefault();
+                let leaveType = {
+                    userId: parseInt($("#selectUserDropdown").val(),10),
+                    leaveTypeId: parseInt($("#selectLeaveTypeDropdown").val(), 10),
+                    allocatedDays: parseInt($("#leaveAllocatedDays").val(),10),
+                    usedDays: 0,
+                    leavePeriodId: parseInt($("#selectLeavePeriod").val(), 10)
+                };
+                $.ajax({
+                    url: "https://localhost:7192/api/User/UserLeaveBalance",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: JSON.stringify(leaveType),
+                    success: function() {
+                        alert("Leave Type Added Successfully!");
+                        $("#leaveTypeForm")[0].reset();
+                        loadTable();
+                    }
+                });
+            });
+        });
+
+        function loadUsers() {
+            $.ajax({
+                url: "https://localhost:7192/api/User/GetUser",
+                type: "GET",
+                success: function (response) {
+                    let dropdown = $("#selectUserDropdown");
+                    dropdown.empty();
+                    dropdown.append('<option value="">Select User</option>');
+
+                    response.forEach(user => {
+                        dropdown.append(`<option value="${user.id}">${user.fullName}</option>`);
+                    });
+                    _userArray.push(...response);
+                    loadLeaveType();
+                },
+                error: function () {
+                    alert("Error loading leave types.");
+                }
+            });
+        }
+        function loadLeaveType() {
+            $.ajax({
+                url: "https://localhost:7192/api/LeavePeriod/GetLeaveType",
+                type: "GET",
+                success: function (response) {
+                    let dropdown = $("#selectLeaveTypeDropdown");
+                    dropdown.empty();
+                    dropdown.append('<option value="">Select Leave Type</option>');
+
+                    response.forEach(user => {
+                        dropdown.append(`<option value="${user.id}">${user.name}</option>`);
+                    });
+                    _leaveTypeArray.push(...response)
+                    loadLeavePeriod();
+                },
+                error: function () {
+                    alert("Error loading leave types.");
+                }
+            });
+        }
+        function loadLeavePeriod() {
+            $.ajax({
+                url: "https://localhost:7192/api/LeavePeriod/GetLeavePeriod",
+                type: "GET",
+                success: function (response) {
+                    let dropdown = $("#selectLeavePeriod");
+                    dropdown.empty();
+                    dropdown.append('<option value="">Select Leave Period</option>');
+
+                    response.forEach(user => {
+                        dropdown.append(`<option value="${user.id}">${user.name}</option>`);
+                    });
+                    _leavePeriodArray.push(...response)
+                    loadTable();
+                },
+                error: function () {
+                    alert("Error loading leave types.");
+                }
+            });
+        }
+        function loadTable() {
+            $.ajax({
+                url: "https://localhost:7192/api/User/GetUserLeaveBalance",
+                type: "GET",
+                success: function (response) {
+                    let tableBody = "";
+                    response.forEach((leaveType, index) => {
+                        const userName = _userArray.find(x => x.id == leaveType.userID);
+                        const leavePeriodName = _leavePeriodArray.find(x => x.id == leaveType.leavePeriodId);
+                        const leaveTypeName = _leaveTypeArray.find(x => x.id == leaveType.leaveTypeID);
+                        tableBody += `<tr>
+                         <td>${index + 1}</td>
+                         <td>${leavePeriodName?.name}</td>
+                         <td>${userName?.fullName}</td>
+                         <td>${leaveTypeName?.name}</td>
+                         <td>${leaveType?.allocatedDays}</td>
+                         <td>${leaveType?.usedDays}</td>
+                         <td>${leaveType?.allocatedDays - leaveType?.usedDays}</td>
+                        
+                        </tr>`;
+                    });
+                    $("#leaveTypeTableBody").html(tableBody);
+                },
+                error: function () {
+                    alert("Error loading leave types.");
+                }
+            });
+        }
+    </script>
+</body>

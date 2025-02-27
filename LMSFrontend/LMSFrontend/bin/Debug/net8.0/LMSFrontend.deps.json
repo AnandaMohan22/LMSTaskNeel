@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "LMSFrontend/1.0.0": {
+        "runtime": {
+          "LMSFrontend.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LMSFrontend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
